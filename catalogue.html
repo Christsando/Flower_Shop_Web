@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styl.css buat design webnya -->
+    <link rel="stylesheet" href="STYLE/style_catalogue.css">
+    <!-- logo webnya --> 
+    <link rel="shortcut icon" type="icon" href="IMAGES/carpella_logo_2.png">
+    
+    <title>Catalogue | Carpella Florist</title>
+
+</head>
+    <!-- ini note  buat pengembangan web lebih lanjut-->
+    <!-- Pake web ini 
+        https://lottiefiles.com/web-player
+        https://www.happyhues.co/palettes/11
+        https://neumorphism.io/#e0e0e0
+    -->
+
+    <!--cara push file baru
+        1. git add .
+      2. git commit -m ""
+    3. git push -u-->
+<body>
+
+    <!-- ini bagian header bagian <li> atau link ke berbagai pagenya -->
+        <header class="container-header">
+
+            <!-- bagian menubarnya -->
+            <div class="nav">
+                
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                    <div class="nav-title">
+                        <h1 style="font-family: Prata; color: #545454;
+                        font-size: 20px;">
+                            Carpella
+                        </h1>
+                        <!-- font family dipisah, males nambah class -->
+                        <h1 style="font-family: beautifully; color: #6b4e3d;
+                        font-size: 35px;margin-top: -13px; margin-left: 7px;">
+                            Florist
+                        </h1>
+
+                        <!-- Logo -->
+                        <!-- <img src="IMAGES/carpella_logo_1.png" id="logo"> -->
+                    </div>
+                </div>
+    
+                <!-- ini button responsivenya -->
+                <div class="nav-btn">
+                    <label for="nav-check">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </label>
+                  </div>
+    
+                <!-- Logo -->
+                <!-- <img src="IMAGES/carpella_logo_0.png" class="image"> -->
+    
+                <!-- ini grid button utama -->
+                <nav class="nav-links">
+                    <!-- Ini link ke halaman lainnya -->
+                    <ul>
+                        <!-- buat ke home page -->
+                        <a href="home.html">
+                            <b>HOME</b>
+                        </a>
+                        <!-- buat ke about us page -->
+                        <a href="about_us.html">
+                            <b>ABOUT US</b>
+                        </a>
+                        <!-- buat ke catalogue page -->
+                        <a href="catalogue.html">
+                            <b>CATALOGUE</b>
+                        </a>
+                        <!-- buat ke location page -->
+                        <a href="https://www.freeconvert.com/png-converter/download">
+                            <b>LOCATION</b>
+                        </a>
+                        <!-- buat ke custom page -->
+                        <a href="https://www.freeconvert.com/png-converter/download">
+                            <b>CUSTOM</b>
+                        </a>
+                </nav>
+    
+            </div>
+            <!-- ini image -->
+            <img src="IMAGES/Flower_Back_Menu.png" alt="bunga">
+
+            <!-- Title Section -->
+            <h1 class="h1-title-section">
+                CATALOGUE
+            </h1>
+    
+        </header>
+
+    <!-- semua unsur web ada disini -->
+    <main>
+        <!-- ini bagian whatsapp -->
+        <div class="container-whatsapp">
+            <!-- ini untuk link nyambung ke nomor whatssappnya -->
+            <!-- target blank dimaksud biar gak di tab sama kebukanya -->
+            <a href="https://wa.me/6285173050057" target="_blank">
+                <!-- ini logo atau lambang dari whatsappnya -->
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_6hrplbhl.json"  background="transparent"  
+                speed="1"  style="width: 100px; height: 100px;" loop  autoplay></lottie-player>
+            </a>
+        </div>
+
+    </main>
+</body>
+
+</html>

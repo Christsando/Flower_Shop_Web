@@ -1,0 +1,233 @@
+/* ====================ALL WEB==================== */
+/* untuk keseluruhan webnya */ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ====================ALL WEB==================== */
+
+
+
+/* ====================BODY==================== */
+/* background keseluruhan */
+body {
+    /* background color web */
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ====================FONTS==================== */
+@font-face{
+    font-family: 'Gistesy';
+    src: url(FONTS/Gistesy.ttf);
+}
+
+/* Font text 'Carpella' */
+@font-face{
+    font-family: 'Prata';
+    src: url(FONTS/Prata-Regular.ttf);
+}
+
+/* Font text 'Florist' */
+@font-face{
+    font-family: 'Beautifully';
+    src: url(FONTS/BDScript-Regular.otf);
+}
+
+@font-face{
+    font-family: 'TypeWriter';
+    src: url(FONTS/TypewriterInkedRegular.ttf);
+}
+
+@font-face{
+    font-family: 'Monday';
+    src: url(FONTS/Monday-Feeling.ttf);
+}
+
+@font-face{
+    font-family: 'Maison-Reguler';
+    src: url(FONTS/MaisondeartisanfreeRegular-qZl52.otf);
+}
+
+@font-face{
+    font-family: 'Maison-Italic';
+    src: url(FONTS/MaisondeartisanfreeItalic-VGrmz.otf);
+}
+/* ====================FONTS==================== */
+/* ====================BODY==================== */
+
+
+
+
+/* ====================LIST RESPONSIVE==================== */
+/* ====================LIST NAV STYLE==================== */
+/* buat ilangin tanda listnya */
+.nav .nav-links a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 22px;
+    font-family: 'Maison-Reguler';
+}
+
+/* animasi buat linknyav */
+.nav  .nav-links  a:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+/* ====================LIST NAV STYLE==================== */
+/* ====================BUTTON RESPONSIVE==================== */
+/* ilangin saat gak dibutuhin */
+.nav  .nav-btn {
+    display: none;
+}
+/* ====================BUTTON RESPONSIVE==================== */
+/* ini bagian container list-responsivenya */
+.container-header{
+    width: 100%;
+    height: 400px;
+}
+/* ====================TITLE SECTION==================== */
+.container-header .h1-title-section {
+    font-family: 'TypeWriter';
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+}
+/* ====================TITLE SECTION==================== */
+/* ====================HOME BACKGROUND PAGE==================== */
+/* ini bagian image */
+.container-header img {
+    max-width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+/* ====================HOME BACKGROUND PAGE==================== */
+/* ini box bagian dari navnya */
+.nav {
+    height: 69px;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: fixed;
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 1;
+    box-shadow: 6px 13px 100px #000000;
+}
+
+/* ini untuk style untuk link navnya */
+.nav  .nav-links {
+    width: 50%;
+    display: inline-flex;
+    justify-content: flex-end;
+    font-family: 'Maison-Reguler';
+    column-gap: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+}
+
+/* ini bagian container buat logonya */
+.nav  .nav-header {
+    width: 50%;
+    display: inline;
+}
+
+/* ini bagian style buat logonya */
+.nav  .nav-header  .nav-title {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav  #nav-check {
+    display: none;
+}
+
+/* ====================RESPONSIVE RESULT==================== */
+@media (max-width:1230px) {
+    .nav  .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 1%;
+      top: 15%;
+    }
+
+    .nav  .nav-btn  label {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      width: 50px;
+      height: 50px;
+      padding: 15px;
+      border: none;
+      border-top-right-radius: 10px;
+    }
+    .nav  .nav-btn  label:hover,.nav  #nav-check:checked ~ .nav-btn  label {
+      background-color: rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+    }
+    .nav  .nav-btn  label  span {
+      display: block;
+      width: 25px;
+      height: 5px;
+      background-color: #413f3d;
+      border-radius: 5px;
+    }
+    .nav  .nav-links {
+      position: absolute;
+      display: block;
+      width: 35%;
+      background-color: #ffffff;
+      height: 0px;
+      transition: all 0.5s ease-in;
+      overflow-y: hidden;
+      top:75%;
+      right: 0px;
+      text-align: end;
+    }
+    .nav  .nav-links  a {
+      display: block;
+      width: 100%;
+      padding-left: 20px;
+      /* warna tulisan pas di list zoom in */
+      color: #000000;
+      font-family: 'Maison-Reguler';
+    }
+    .nav  #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav  #nav-check:checked ~ .nav-links {
+      height: 250px;
+      overflow-y: hidden;
+    }
+}
+/* ====================RESPONSIVE RESULT==================== */
+.attribute{
+    position: absolute;
+    bottom: 10px;
+}
+/* ====================LIST REPONSIVE==================== */
+
+
+/* ====================MAIN==================== */
+/* ===================WHATSAPP=================== */
+.container-whatsapp {
+    position: fixed;
+    max-width: 100%;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+/* ===================WHATSAPP=================== */
+
+/* ====================MAIN==================== */

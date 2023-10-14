@@ -1,0 +1,197 @@
+/* ===================WHATSAPP=================== */
+.container-whatsapp {
+    position: fixed;
+    max-width: 100%;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    
+    /* position of layera */
+    z-index: 999;
+    cursor: pointer;
+}
+/* ===================WHATSAPP=================== */
+
+
+/* ===================MENU BAR=================== */
+/* bagian belakang dari menu box */
+.menu-box{
+    /* posisi gak berubah */
+    position: fixed;
+    width: 100%;
+    height: 98px;
+
+    box-shadow: 0px 12px 100px #a4a4a5;
+
+    /* background */
+    background-color: #FFFFFF;
+
+    /* posisi dari menunya */
+    top: 0px;
+    left: auto;
+    right: 0px;
+
+    /* style border
+    border-bottom: solid #866d59;
+    */
+}
+
+/* ===================BAR GRID=================== */
+/* ini bagian grid menu bar */
+.menu-grid-button {
+    display:flex;
+    margin-top: 17px;
+    margin-left: auto;
+    justify-content: center;
+}
+
+
+/* responsive terhadap perubahasan windows */
+@media screen and (max-width: 767px) {
+    .menu-grid-button {
+      grid-template-columns: 1fr;
+      /* Mengubah ke 1 kolom pada layar kecil */
+    }
+}
+/* ===================BAR GRID=================== */
+
+/* ===================UNDERLINE ANIMATION=================== */
+li{
+    /* ukuran buttonnya */
+    position: relative;
+    display: inline-block;
+    padding: 1px;
+    margin-left: 40px;
+    margin-top: 0px;
+
+    font-family: 'Maison-Reguler';
+    font-size: 18px;
+    list-style-type: none;
+
+    cursor: pointer;
+}
+
+li::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #876839;
+    transition: width 0.2s ease-in-out;
+
+}
+
+li:hover::before {
+    width: calc(100% + 10px);
+}
+/* ===================UNDERLINE ANIMATION=================== */
+/* ===================MENU BAR=================== */
+
+
+
+
+/* ===================HOME SECTION=================== */
+/* ===================TITLE HOME=================== */
+.home-page{
+    /* ini untuk menyembunyikan section catalogue pagenya */
+    /* di nonekan terlebuh dahulu */
+    display: flex;
+    max-width: 100%;
+}
+
+/* ini untuk menampilkan bagian atas setelah header */
+.container-title-home {
+    /* display grid */
+    /* di nonekan terlebuh dahulu */
+    display:grid;
+    margin-top: 90px;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.container-title-home img {
+    height: 100%; 
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0%;
+    justify-items: center;
+}
+
+.container-title-home h2{
+    font-family: 'TypeWriter';
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: -300px;
+    font-size: 2.2em;
+} 
+/* ===================TITLE HOME=================== */
+/* ===================HOME SECTION=================== */
+
+
+
+/* ===================CATALOGUE SECTION=================== */
+/* ===================TITLE CATALOGUE=================== */
+.catalogue-page{
+    /* ini untuk menyembunyikan section catalogue pagenya */
+    /* di nonekan terlebuh dahulu */
+    display: flex;
+    max-width: 100%;
+}
+
+/* ini untuk menampilkan bagian atas setelah header */
+.container-title-catalogue {
+    /* display grid */
+    /* di nonekan terlebuh dahulu */
+    display:grid;
+    margin-top: 90px;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.container-title-catalogue img {
+    height: 100%; 
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0%;
+    justify-items: center;
+}
+
+.container-title-catalogue h2{
+    font-family: 'TypeWriter';
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: -300px;
+    font-size: 2.2em;
+} 
+/* ===================TITLE CATALOGUE=================== */
+
+/* ===================FLOWER CATALOGUE=================== */
+.container-flower {
+    max-width: 100%;
+    /* ini display flex */
+    display: flex;
+}
+
+.img-catalogue{
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: auto;
+    display: flex;
+}
+
+.img-catalogue img{
+    margin-left: 10px;
+}
+
+.container-flower h2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    font-family: "Maison-Reguler";
+}
+/* ===================FLOWER CATALOGUE=================== */
+/* ===================CATALOGUE SECTION=================== */
